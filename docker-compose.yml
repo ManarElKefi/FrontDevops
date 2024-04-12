@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  achat-front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "4200:4200"
